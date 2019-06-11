@@ -1,0 +1,21 @@
+{
+    "name": "gondr/kgc",
+    "description": "blog page with php",
+    "authors": [
+        {
+            "name": "kgc",
+            "email": "overnice2020@gmail.com"
+        }
+    ],
+    "require": {
+        "jenssegers/blade": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gondr\\" : "App"
+        }
+    },
+    "_comment": [
+        "오토로드 반영을 위해 composer dump-autoload 를 칠것"
+    ]
+}
