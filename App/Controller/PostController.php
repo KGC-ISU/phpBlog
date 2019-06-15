@@ -17,6 +17,12 @@ class PostController extends MasterController {
         $content = $_POST['content'];
         $writer = $_SESSION['user']->id;
 
+        $config = \HTMLPurifier_HTML5Config::createDefault();
+        $purifier = new \HTMLPurifier($config);
+
+        $content = $purifier->purify($content);
+        $title = $purifier->purify($title);
+
         if(isset($_POST['id'])){
             //글수정
             $sql = "UPDATE boards SET title = ?, content = ? WHERE id = ?";

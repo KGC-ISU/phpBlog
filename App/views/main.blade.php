@@ -8,7 +8,7 @@
         <div class="imgs">
             {!! $imgs->thumbnail !!}
             <div class="text">
-                <p>행복한 하루 되세요!</p>
+                <p>좋다</p>
             </div>
         </div>
         @endforeach

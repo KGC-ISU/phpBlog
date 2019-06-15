@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "jenssegers/blade": "^1.2"
+        "jenssegers/blade": "^1.2",
+        "xemlock/htmlpurifier-html5" : "^0.1.10"
     },
     "autoload": {
         "psr-4": {
